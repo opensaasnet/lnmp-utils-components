@@ -3,7 +3,7 @@
 #pack utils
 
 CURRENT_DIR=$(cd `dirname $0`; pwd)"/"
-DIRLIST=(win centos7)
+DIRLIST=(windows linux)
 ZIPLIST=("component" "module")
 PKGDIR=$CURRENT_DIR"pkg/"
 PKGFILE=$CURRENT_DIR'pkg.cnf'
@@ -36,7 +36,7 @@ do
 			fi
 			
 			_zipname="${_dn}-${_zn}-${_fd}"
-			zip -r9 -s=10000000  $_zipname ./$_fd
+			zip -r9 -s=40000000  $_zipname ./$_fd
 			ls ./|grep -e "${_zipname}.z" > "${_zipname}.cnf"
 			mv -f ${_zipname}* $PKGDIR
 			
