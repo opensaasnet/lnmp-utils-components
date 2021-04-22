@@ -2,6 +2,7 @@ linux-component-fastdfs
 linux-component-lsyncd
 linux-component-memcached
 linux-component-mysql
+linux-component-node
 linux-component-openresty
 linux-component-php
 linux-component-redis
