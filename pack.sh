@@ -1,12 +1,20 @@
 #!/bin/bash
 
 #pack utils
-
 CURRENT_DIR=$(cd `dirname $0`; pwd)"/"
 DIRLIST=(windows linux)
 ZIPLIST=("component" "module")
 PKGDIR=$CURRENT_DIR"pkg/"
 PKGFILE=$CURRENT_DIR'pkg.cnf'
+
+BUILD_DIR=${CURRENT_DIR}build/
+if [ ! -d $BUILD_DIR ];then
+	BUILD_DIR=`dirname $CURRENT_DIR`"/lnmp-utils/build/"
+fi
+
+if [ ! -d $BUILD_DIR ];then
+	exit
+fi
 
 echo "clear pkg dir:${PKGDIR}"
 
@@ -21,7 +29,7 @@ for _dn in ${DIRLIST[@]}
 do
 	for _zn in "${ZIPLIST[@]}"
 	do
-		buildPath=${CURRENT_DIR}build/${_dn}/${_zn}/
+		buildPath=${BUILD_DIR}${_dn}/${_zn}/
 		
 		if [[ ! -d $buildPath ]];then
 			continue;
