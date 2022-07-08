@@ -3,12 +3,12 @@ lnmp-utils-components
 
 简介
 ===
-> lnmp-utils 项目地址: [https://github.com/opensaasnet/lnmp-utils](https://github.com/opensaasnet/lnmp-utils)  
+> lnmp-utils 项目地址: [https://github.com/tinyphporg/lnmp-utils](https://github.com/tinyphporg/lnmp-utils)  
 >  Linux(CentOS7X_64) + Openresty/Nginx + Mysql + PHP + Redis + FastDFS一键安装包.   
 >  经过实践检验，源码编译安装LNMP大型集群环境。   
 
-> 项目主要应用于: [TinyPHP for Frameworks](https://github.com/opensaasnet/tinyphp.git) 的运行环境。   
->  地址: [https://github.com/opensaasnet/tinyphp.git](https://github.com/opensaasnet/tinyphp.git)    
+> 项目主要应用于: [TinyPHP for Frameworks](https://github.com/tinyphporg/tinyphp.git) 的运行环境。   
+>  地址: [https://github.com/tinyphporg/tinyphp.git](https://github.com/tinyphporg/tinyphp.git)    
 
 安装
 ===
@@ -23,7 +23,7 @@ lnmp-utils-components
 lnmp一键安装  
 ---- 
 ```shell
-   git clone https://github.com/opensaasnet/lnmp-utils.git
+   git clone https://github.com/tinyphporg/lnmp-utils.git
    cd lnmp-utils
    ./install.sh
 ```
